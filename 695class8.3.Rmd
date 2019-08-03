@@ -1,0 +1,40 @@
+---
+title: "610class"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+### Exploratory Data Analysis
+### The research question is to find out the salary gap between male and female in the different industry. Professor requests to submit the thing we have for now.
+
+```{r cars}
+library(readxl)
+income <- read_excel("Desktop/anly610_AnalyticalMethods/income.xls")
+income = income[complete.cases(income),]
+
+hist( income$All_workers)
+
+
+```
+
+### Hide the code
+
+```{r echo=FALSE}
+x=5
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### Show the code - The x value is equal'r x'
+
+x=5
+
+### The text format
+*italic*
+**bold**
+
